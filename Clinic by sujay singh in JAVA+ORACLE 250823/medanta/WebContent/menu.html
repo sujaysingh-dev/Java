@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu.com</title>
+</head>
+<body>
+        <h1>Menu Tab</h1>
+        <table>
+	<tr>
+		<td>Appointment</td>
+		<td><input type="button" value="Save" onclick="apsave()"></td>
+		<td><input type="button" value="Update" onclick="apupdate()"></td>
+		<td><input type="button" value="Delete" onclick="apdelete()"></td>
+	</tr>
+	<tr>
+		<td>Clinic</td>
+		<td><input type="button" value="Save" onclick="clsave()"></td>
+		<td><input type="button" value="Update" onclick="clupdate()"></td>
+		<td><input type="button" value="Delete" onclick="cldelete()"></td>
+	</tr>
+	<tr>
+		<td>Doctors</td>
+		<td><input type="button" value="Save" onclick="dosave()"></td>
+		<td><input type="button" value="Update" onclick="doupdate()"></td>
+		<td><input type="button" value="Delete" onclick="dodelete()"></td>
+	</tr>
+	<tr>
+		<td>Patient</td>
+		<td><input type="button" value="Save" onclick="pasave()"></td>
+		<td><input type="button" value="Update" onclick="paupdate()"></td>
+		<td><input type="button" value="Delete" onclick="padelete()"></td>
+	</tr>
+	<tr>
+		<td>Test</td>
+		<td><input type="button" value="Save" onclick="tesave()"></td>
+		<td><input type="button" value="Update" onclick="teupdate()"></td>
+		<td><input type="button" value="Delete" onclick="tedelete()"></td>
+	</tr>
+        </table>
+</body>
+<style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+        background-image: linear-gradient(to right, #e2e8d2,#c6e59b,#cceda8,#ace68c);
+        height: 100vh;
+}
+h1{
+        text-align: center;
+        margin-top: 50px;
+        text-shadow: 2px 2px rgb(149, 147, 147);
+        color: rgb(235, 183, 117);
+        font-size: 60px;
+}
+table{
+        margin-top: 40px;
+        margin-left: 350px;
+        width: auto;
+        border: 2px solid black;
+        box-shadow: 5px 10px 15px  rgb(72, 72, 72);
+}
+tr{
+        font-size: 25px;
+        color: white;
+}
+td{
+        padding: 10px 20px ;
+        border: 2px solid black;
+        background-color: rgb(0, 0, 0);
+}
+input{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 5px;
+        transition: .5s;
+}
+input:hover{
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        color: rgb(9, 9, 9);
+        background-color: rgb(249, 247, 247);
+        cursor: pointer;
+        border-radius: 5px;
+        border-color:  red;
+}
+</style>
+<script>
+
+	function apsave()
+	{
+		window.open("appoint.html","_self")
+	}
+	function apupdate()
+	{
+		window.open("updateappoint.html","_self")
+	}
+	function apdelete()
+	{
+		window.open("deleteappoint.html","_self")
+	}
+	function clsave()
+	{
+		window.open("clinic.html","_self")
+	}
+	function clupdate()
+	{
+		window.open("updateclinic.html","_self")
+	}
+	function cldelete()
+	{
+		window.open("deleteclinic.html","_self")
+	}
+	function dosave()
+	{
+		window.open("doctor.html","_self")
+	}
+	function doupdate()
+	{
+		window.open("updatedoctor.html","_self")
+	}
+	function dodelete()
+	{
+		window.open("deletedoctor.html","_self")
+	}
+	function pasave()
+	{
+		window.open("patient.html","_self")
+	}
+	function paupdate()
+	{
+		window.open("updatepatient.html","_self")
+	}
+	function padelete()
+	{
+		window.open("deletepatient.html","_self")
+	}
+	function tesave()
+	{
+		window.open("test.html","_self")
+	}
+	function teupdate()
+	{
+		window.open("updatetest.html","_self")
+	}
+	function tedelete()
+	{
+		window.open("deletetest.html","_self")
+	}
+        
+</script>
+</html>

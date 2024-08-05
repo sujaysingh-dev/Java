@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login.com</title>
+</head>
+<body>
+        <div class="login-box">
+                <h1>Login Clinic</h1>
+                        <form name="f" action="login.jsp" method="post">
+                                <div class="input-box">
+                                        <input type="text" name="t1" required="">
+                                        <label>Username</label>
+                                </div>
+                                <div class="input-box">
+                                        <input type="password" name="t2" required="">
+                                        <label>Password</label>
+                                </div>
+                                <div class="submit">
+                                        <input type="submit" value="Submit" name="b1">
+                                </div>
+                                <a href="#">Create</a>
+                                <a href="#">SignUp</a>
+                        </form>
+        </div>
+</body>
+<style>
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+body{
+        background-image: linear-gradient(to right, #f6e1e1,#f3b2b2,#fa9e9e,#f6e1e1);
+        height: 100vh;
+}
+.login-box{
+        position: absolute;
+        padding: 50px;
+        border: 2px solid royalblue;
+        width: 400px;
+        margin-top: 120px;
+        margin-left: 460px;
+        border-radius: 10px;
+        box-shadow: 2px 5px 10px black;
+        background-image: linear-gradient(to right, #f5f6e1,#e7f3b2,#effa9e,#e8fc90);
+}
+.login-box h1{
+        margin-top: -30px;
+        color: rgba(127, 102, 102, 0.364);
+        text-shadow: 2px 2px black;
+        text-align: center;
+}
+.login-box .input-box{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+}
+.login-box .input-box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #d88f8f;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 2px solid #e69797;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+}
+.login-box .input-box label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 18px;
+        color: #d88f8f;
+        pointer-events: none;
+        transition: .5s;
+}
+.login-box .input-box input:focus~label,
+.login-box .input-box input:valid ~ label{
+        top: -20px;
+        left: 0;
+        color: rgba(245, 90, 209, 0.932);
+        font-size: 13px;
+}
+.submit{
+        text-align: center;
+        border: 2px solid #faf9f8;
+        border-radius: 10px;
+        background: transparent;
+}
+.submit input{
+        font-size: 30px;
+        background: transparent;
+        padding-left: 93px;
+        padding-right: 93px;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        transition: .5s;
+}
+.submit input:hover{
+        font-size: 30px;
+        background: transparent;
+        padding-left: 93px;
+        padding-right: 93px;
+        border-radius: 10px;
+        font-weight: bold;
+        background-color: rgb(253, 253, 253);
+        box-shadow: 3px 3px 10px black;
+        color: black;
+}
+.login-box form a{
+        position: relative;
+        display: inline-block;
+        padding: 10px 34px;
+        color: #030303;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+        margin-top: 40px;
+        letter-spacing: 1px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        background: rgb(255, 254, 254);
+        transition: .5s;
+}
+.login-box form a:hover{
+        position: relative;
+        display: inline-block;
+        padding: 10px 34px;
+        color: #fbfbfb;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        overflow: hidden;
+        margin-top: 40px;
+        letter-spacing: 1px;
+        border: 2px solid rgb(248, 247, 247);
+        border-radius: 10px;
+        background: rgb(8, 8, 8);
+        box-shadow: 4px 4px 15px black;
+}
+
+</style>
+</html>
